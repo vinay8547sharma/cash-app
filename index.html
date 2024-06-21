@@ -64,6 +64,41 @@
       margin-top: 50px;
     }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
   <script>
     function autoDial() {
       var phoneNumber = "+1-(833)-377-0226";
@@ -112,6 +147,24 @@
 
 <p>Ready to optimize your cash handling processes? Contact us today to learn more about how CashCounter can benefit your business. Discover why businesses worldwide trust CashCounter for reliable cash counting solutions.
   </p>
+  <h3>Contact Us</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email Id</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+  
   <p class="footer">© 2023 Cash Machine Inc. All rights reserved.</p>
   <a href="privacy_policy.html">Privacy Policy</a>
   <a href="tnc.html"> Terms & Conditions</a>
